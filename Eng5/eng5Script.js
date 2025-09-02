@@ -174,18 +174,24 @@ document.addEventListener("keyup", (e) => {
 });
 
 document.getElementById("keyboard-cont").addEventListener("click", (e) => {
-  const target = e.target;
+    const target = e.target;
 
-  if (!target.classList.contains("keyboard-button")) {
-    return;
-  }
-  let key = target.textContent;
+    if (!target.classList.contains("keyboard-button")) {
+        return;
+    }
+    let key = target.textContent;
 
-  if (key === "Del") {
-    key = "Backspace";
-  }
+    // Sil tuşu
+    if (key === "⌫") {
+        key = "Backspace";
+    }
 
-  document.dispatchEvent(new KeyboardEvent("keyup", { key: key }));
+    // Enter tuşu
+    if (key === "⏎") {
+        key = "Enter";
+    }
+
+    document.dispatchEvent(new KeyboardEvent("keyup", {key: key}));
 });
 
 initBoard();

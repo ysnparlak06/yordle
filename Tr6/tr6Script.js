@@ -216,8 +216,14 @@ document.getElementById("keyboard-cont").addEventListener("click", (e) => {
         key = key.toLowerCase();
     }
 
-    if (key === "del") {
+    // Sil tuşu
+    if (key === "⌫") {
         key = "Backspace";
+    }
+
+    // Enter tuşu
+    if (key === "⏎") {
+        key = "Enter";
     }
 
     document.dispatchEvent(new KeyboardEvent("keyup", {key: key}));

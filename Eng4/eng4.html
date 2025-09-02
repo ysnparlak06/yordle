@@ -14,8 +14,8 @@
 </head>
 <body>
     <div class="button-container">
-        <button onclick="openPage('/yordle')">Geri</button>
-        <button onclick="refreshPage()">Yenile</button>
+        <button onclick="openPage('/yordle')" title="Geri">⟵</button>
+        <button onclick="refreshPage()" title="Yenile">↻</button>
     </div>
 
     <script>
@@ -28,11 +28,12 @@
         }
     </script>
 
-    <h1> Yordle English 4 </h1>
+    <h1> English 4 </h1>
     
     <div id="game-board">
 
     </div>
+
 
     <div id="keyboard-cont">
         <div class="first-row">
@@ -59,7 +60,7 @@
             <button class="keyboard-button">l</button>
         </div>
         <div class="third-row">
-            <button class="keyboard-button">Del</button>
+            <button class="keyboard-button" title="Sil">⌫</button>
             <button class="keyboard-button">z</button>
             <button class="keyboard-button">x</button>
             <button class="keyboard-button">c</button>
@@ -67,10 +68,9 @@
             <button class="keyboard-button">b</button>
             <button class="keyboard-button">n</button>
             <button class="keyboard-button">m</button>
-            <button class="keyboard-button">Enter</button>
+            <button class="keyboard-button" title="Enter">⏎</button>
         </div>
     </div>
-
 <script
 src="https://code.jquery.com/jquery-3.6.0.min.js"
 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

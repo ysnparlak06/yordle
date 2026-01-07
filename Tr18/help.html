@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Yordle Yardım</title>
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+
+<div class="solver-container">
+
+    <section>
+        <h1>Kelime Yardım Ekranı</h1>
+        <h3>Yeri Doğru Harfler (Yeşil)</h3>
+        <div id="green-row"></div>
+    </section>
+
+    <section>
+        <h3>Yeri Yanlış Harfler (Sarı)</h3>
+        <div id="yellow-row"></div>
+    </section>
+
+<section>
+    <h3>Yok Harfler (Gri)</h3>
+    <div id="bad-letters-grid" class="bad-grid"></div>
+</section>
+
+
+    <button id="solve-btn">🔍 Olası Kelimeleri Bul</button>
+
+    <h3>Sonuçlar</h3>
+    <div id="results"></div>
+
+</div>
+
+<script type="module" src="help.js"></script>
+</body>
+</html>

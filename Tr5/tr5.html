@@ -15,6 +15,7 @@
     <div class="button-container">
         <button onclick="openPage('/yordle')" title="Geri">⟵</button>
         <button onclick="refreshPage()" title="Yenile">↻</button>
+        <button id="help-btn" title="Yardım">?</button>
     </div>
 
     <script>
@@ -23,7 +24,15 @@
         }
 
         function refreshPage() {
-            location.reload();  // Sayfayı yeniden yükler
+            location.reload();
+        }
+
+        const helpBtn = document.getElementById("help-btn");
+
+        if (helpBtn) {
+            helpBtn.addEventListener("click", () => {
+                window.open("yardim.html", "_blank");
+            });
         }
     </script>
 

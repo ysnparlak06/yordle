@@ -28,7 +28,6 @@ export const WORDS = [
     'az',
     'ba',
     'be',
-    'be',
     'bi',
     'bu',
     'ca',
